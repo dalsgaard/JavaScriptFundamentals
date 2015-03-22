@@ -1,6 +1,5 @@
 # Prototypes
 
-
 ## Constructor Functions
 
 ```

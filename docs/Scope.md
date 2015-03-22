@@ -119,8 +119,6 @@ If function is the very first thing in the statement, then it’s a function dec
 	}, 1);
 
 
-
-
 ### Hoisting
 
 	a = 7;
@@ -134,7 +132,7 @@ If function is the very first thing in the statement, then it’s a function dec
 	foo();
 	console.log(a);
 	
-Declarations har hoisted.
+Declarations are hoisted.
 
 	a = 7;
 	
