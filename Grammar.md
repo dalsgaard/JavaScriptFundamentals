@@ -1,5 +1,31 @@
 # Grammar
 
+## Curly Braces
+
+### Object Literals
+
+```
+var a = {
+	foo: 42
+};
+```
+
+### Blocks
+
+```
+[] + {};
+{} + [];
+```
+
+### Labels
+
+```
+{
+	foo: 42
+}
+```
+
+
 ## Operator Precedence
 
 ```
@@ -38,3 +64,112 @@ console.log(a, b);
 console.log(true ? false : true ? true : true);
 ```
 
+## Automatic Semicolon Insertion
+
+If the JavaScript parser parses a line where a parser error would occur (a missing expected `;`), and there is nothing but whitespace and/or comments between the end of some statement and that line’s newline/line break, it insert one
+
+
+## try .. catch .. finally and throw
+
+```
+try {
+    throw 'foo';
+} catch (e) {
+    console.dir(e);
+}
+```
+
+```
+try {
+	// stuff
+} catch (e) {
+    console.log(e);
+} finally {
+	console.log('Done!');
+}
+```
+
+```
+try {
+    // stuff
+} catch (e) {
+	if (e instanceof Error) {
+	    console.dir(e.stack);
+	} else {
+		throw e;
+	}
+}
+```
+
+```
+function foo() {
+	try {
+		return 4;
+	} finally {
+		return 6;
+	}
+}
+
+console.log(foo());
+```
+
+```
+function foo() {
+	try {
+		return 4;
+	} finally {
+		throw new Error();
+	}
+}
+
+console.log(foo());
+```
+
+
+## switch
+
+```
+var a = 42;
+
+switch (a) {
+	case 2:
+		// stuff
+		break;
+	case 42:
+		// stuff
+		break;
+	default:
+		// default stuff
+}
+```
+
+```
+var a = 42;
+
+switch (a) {
+	case 2:
+		// stuff
+	case 42:
+		// stuff
+
+	case 100:
+		// stuff
+	default:
+		// default stuff
+}
+```
+
+```
+var a = '42';
+
+switch (true) {
+	case a == 2:
+		// stuff
+		break;
+	case a == 42:
+		// stuff
+		break;
+	default:
+		// default stuff
+}
+```
