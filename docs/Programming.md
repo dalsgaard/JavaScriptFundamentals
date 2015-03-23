@@ -26,13 +26,10 @@ The statement `a = b + 3;` consists of four expressions
 
 	console.log(c);
 
-## Running a Program
+### Running a Program
 
-### Interpreted versus Compiled
-
-#### Interpreter
-
-#### Compiler
+- Interpreter
+- Compiler
 
 The JavaScript engine compiles the program on the fly and then immediately runs the compiled code.
 
@@ -171,7 +168,7 @@ Variables can hold values of different types.
 
 	do {
 		// one ore more repeating stuff
-	} while (index < 10)
+	} while (index < 10);
 
 #### for-Statements
 
