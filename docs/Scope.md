@@ -70,7 +70,7 @@ The top-level scope has no parent scope, and is called Global Scope.
 
 If a RHS look-up is failing in the Global Scope, the variable is said to be *undeclared*, and a `ReferenceError` is thrown.
 
-If a RHS look-up is failing in the Global Scope, the variable is created (in Global Scope) and returned.
+If a LHS look-up is failing in the Global Scope, the variable is created (in Global Scope) and returned.
 
 ### Aside
 

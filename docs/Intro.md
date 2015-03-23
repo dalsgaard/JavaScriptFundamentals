@@ -136,7 +136,7 @@
 
 	var bar = function(a, b, c) {
 		// stuff
-	}
+	};
 
 	var baz = function foo(a, b, c) {
 		// stuff

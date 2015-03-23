@@ -38,7 +38,7 @@ The JavaScript engine compiles the program on the fly and then immediately runs 
 
 	var a
 
-Or with a assignment
+Or with an assignment
 
 	var b = 6
 
