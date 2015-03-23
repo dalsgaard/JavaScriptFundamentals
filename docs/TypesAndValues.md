@@ -227,7 +227,7 @@ var f = new Function('a', 'b', 'return a + b;');
 var g = new Function('a,b', 'return a + b;');
 ```
 
-[MDN Function]()
+[MDN Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
 
 ### Array()

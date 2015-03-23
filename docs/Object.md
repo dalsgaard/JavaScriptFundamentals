@@ -71,3 +71,4 @@ foo[3] = 56;
 foo.bar = 'WAT!';
 console.log(foo.length);
 ```
+[MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
