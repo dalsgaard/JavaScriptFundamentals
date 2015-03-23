@@ -46,6 +46,9 @@ console.log(a['true']); // => 2
 console.log(a['42']); // => 4
 ```
 
+[MDN Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+
 ## Array
 
 ```
