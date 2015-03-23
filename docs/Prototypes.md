@@ -13,12 +13,12 @@ console.log(foo instanceof Object);
 
 ## prototype
 
-```
+```javascript
 var Foo = function() {};
 Foo.prototype.a = 5;
 
 var foo = new Foo();
-console.log(foo.a);
+console.log(foo.a); // 5
 ```
 
 ```
