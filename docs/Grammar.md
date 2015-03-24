@@ -173,3 +173,16 @@ switch (true) {
 		// default stuff
 }
 ```
+## for .. in ..
+
+```
+var foo = {
+  a: 1,
+  b: 2,
+  c:3
+};
+
+for (var p in foo) {
+  console.log(p, foo[p]);
+}
+```
