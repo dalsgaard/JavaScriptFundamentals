@@ -179,7 +179,7 @@ switch (true) {
 var foo = {
   a: 1,
   b: 2,
-  c:3
+  c: 3
 };
 
 for (var p in foo) {

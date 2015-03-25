@@ -169,11 +169,11 @@ var baz = foo.bind(bar);
 ### new Binding
 
 ```
-function foo() {
+function Foo() {
 	this.a = 4;
 }
 
-var bar = new foo();
+var bar = new Foo();
 console.log(bar.a);
 ```
 
