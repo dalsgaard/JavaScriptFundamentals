@@ -8,7 +8,9 @@ Breaking up a string of characters into meaningful (to the language) chunks, cal
 
 ### Parsing
 
-Taking a stream (array) of tokens and turning it into a tree of nested elements, which collectively represent the grammatical structure of the program. This tree is called an Abstract Syntax Tree (AST).
+Taking a stream (array) of tokens and turning it into a tree of nested elements,
+which collectively represent the grammatical structure of the program.
+This tree is called an Abstract Syntax Tree (AST).
 
 ### Code-Generation
 
