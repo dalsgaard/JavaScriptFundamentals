@@ -6,7 +6,7 @@
 
 ### ToString
 
-```
+```js
 var a = 42;
 var b = [1, 2, 4];
 var c = {};
@@ -20,10 +20,7 @@ console.log(a, b, c, d);
 
 ### ToNumber
 
-```
-var a = Number('42');
-a; // => 42
-
+```js
 var b = Number(true);
 b; // => 1
 
@@ -35,6 +32,9 @@ d; // => NaN
 
 var e = Number(null);
 e; // => 0
+
+var a = Number('42');
+a; // => 42
 
 var f = Number({});
 f; // => NaN
@@ -65,7 +65,7 @@ Anything not explicitly on the falsy list is therefore truthy.
 
 ## ToPrimitive
 
-```
+```js
 var a = {
 	toString: function() {
 		return 'foo';
@@ -82,7 +82,7 @@ var c = Number(a);
 c; // => 42
 ```
 
-```
+```js
 var a = Object.create(null);
 Number(a);
 ```
@@ -92,7 +92,7 @@ Number(a);
 
 ### Explicit Coercion
 
-```
+```js
 var a = '42';
 var b = 3.14;
 var c = true;
@@ -112,7 +112,7 @@ String(c); // => 'true'
 
 ### Implicit Coercion
 
-```
+```js
 var a = '42';
 var b = 3.14;
 var c = true;
@@ -125,7 +125,7 @@ b + ''; // => '3.14'
 
 ### Loose Equals versus Strict Equals
 
-```
+```js
 var a = 42;
 var b = '42';
 var c = true;
@@ -136,7 +136,7 @@ a == c; // => false
 a == d; // => true
 ```
 
-```
+```js
 var a;
 var b = null;
 var c = false;
@@ -153,7 +153,7 @@ b == d; // => false
 b == e; // => false
 ```
 
-```
+```js
 var a = new Number(42);
 var b = new Number(42);
 var c = 42;
@@ -169,7 +169,7 @@ a == d; // => true
 
 ### Abstract Relational Comparison
 
-```
+```js
 var a = 42;
 var b = '42';
 var c = '100';
@@ -178,7 +178,7 @@ a < c; // => true
 b < c; // => false
 ```
 
-```
+```js
 var a = Object(42);
 var b = Object('42');
 var c = Object('100');

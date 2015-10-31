@@ -3,6 +3,7 @@
 ## Day 1
 - Programming
 - Intro
+- WAT! Video
 - Scope
 - this
 - Object
@@ -12,7 +13,7 @@
 - TypesAndValues
 - Natives
 - Coercion
-- WAT Video (again)
+- WAT! Video (again)
 - Grammar
 
 ### Links

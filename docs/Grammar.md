@@ -4,7 +4,7 @@
 
 ### Object Literals
 
-```
+```js
 var a = {
 	foo: 42
 };
@@ -12,14 +12,14 @@ var a = {
 
 ### Blocks
 
-```
+```js
 [] + {};
 {} + [];
 ```
 
 ### Labels
 
-```
+```js
 {
 	foo: 42
 }
@@ -28,7 +28,7 @@ var a = {
 
 ## Operator Precedence
 
-```
+```js
 var d = a && b || c ? c || b ? a : c && b : a;
 ```
 
@@ -37,7 +37,7 @@ var d = a && b || c ? c || b ? a : c && b : a;
 
 ## Short Circuited
 
-```
+```js
 var a = 0;
 var b = 0;
 
@@ -47,7 +47,7 @@ false && b++;
 console.log(a, b);
 ```
 
-```
+```js
 var a = 0;
 var b = 0;
 
@@ -60,18 +60,21 @@ console.log(a, b);
 
 ## Associativity
 
-```
+```js
 console.log(true ? false : true ? true : true);
 ```
 
 ## Automatic Semicolon Insertion
 
-If the JavaScript parser parses a line where a parser error would occur (a missing expected `;`), and there is nothing but whitespace and/or comments between the end of some statement and that line’s newline/line break, it insert one
+If the JavaScript parser parses a line where a parser error would occur
+(a missing expected `;`),
+and there is nothing but whitespace and/or comments between the end of some statement
+and that line’s newline/line break, it insert one
 
 
 ## try .. catch .. finally and throw
 
-```
+```js
 try {
     throw 'foo';
 } catch (e) {
@@ -79,7 +82,7 @@ try {
 }
 ```
 
-```
+```js
 try {
 	// stuff
 } catch (e) {
@@ -89,7 +92,7 @@ try {
 }
 ```
 
-```
+```js
 try {
     // stuff
 } catch (e) {
@@ -101,7 +104,7 @@ try {
 }
 ```
 
-```
+```js
 function foo() {
 	try {
 		return 4;
@@ -113,7 +116,7 @@ function foo() {
 console.log(foo());
 ```
 
-```
+```js
 function foo() {
 	try {
 		return 4;
@@ -128,7 +131,7 @@ console.log(foo());
 
 ## switch
 
-```
+```js
 var a = 42;
 
 switch (a) {
@@ -143,7 +146,7 @@ switch (a) {
 }
 ```
 
-```
+```js
 var a = 42;
 
 switch (a) {
@@ -159,7 +162,7 @@ switch (a) {
 }
 ```
 
-```
+```js
 var a = '42';
 
 switch (true) {
@@ -175,7 +178,7 @@ switch (true) {
 ```
 ## for .. in ..
 
-```
+```js
 var foo = {
   a: 1,
   b: 2,

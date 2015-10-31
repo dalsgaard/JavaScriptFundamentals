@@ -13,7 +13,7 @@
 
 ## String()
 
-```
+```js
 var a = new String('foo');
 ```
 
@@ -22,7 +22,7 @@ var a = new String('foo');
 
 ## Number()
 
-```
+```js
 var a = new Number(42);
 ```
 
@@ -31,7 +31,7 @@ var a = new Number(42);
 
 ## Boolean()
 
-```
+```js
 var a = new Boolean(false);
 ```
 
@@ -40,7 +40,7 @@ var a = new Boolean(false);
 
 ## Boxing
 
-```
+```js
 var a = 'foo';
 console.log(a.length);
 console.log(a.toUpperCase());
@@ -48,7 +48,7 @@ console.log(a.toUpperCase());
 
 ## Unboxing
 
-```
+```js
 var a = new String('foo');
 var b = new Boolean(false);
 var c = new Number(42);
@@ -58,7 +58,7 @@ console.log(b.valueOf() === false);
 console.log(c.valueOf() === 42);
 ```
 
-```
+```js
 var a = new Number(42);
 var b = a + 0;
 
@@ -68,7 +68,7 @@ console.log(typeof a, typeof b);
 
 ## Object()
 
-```
+```js
 var a = new Object();
 ```
 
@@ -77,7 +77,7 @@ var a = new Object();
 
 ## Function()
 
-```
+```js
 var f = new Function('a', 'b', 'return a + b;');
 var g = new Function('a,b', 'return a + b;');
 ```
@@ -87,7 +87,7 @@ var g = new Function('a,b', 'return a + b;');
 
 ## Array()
 
-```
+```js
 var a = new Array();
 var b = new Array(12, 'foo', false);
 var c = new Array(3);
@@ -98,7 +98,7 @@ var c = new Array(3);
 
 ## Date()
 
-```
+```js
 var now = new Date();
 ```
 
@@ -107,7 +107,7 @@ var now = new Date();
 
 ## RegExp()
 
-```
+```js
 var re = new RegExp('\s*foo\s*', 'i');
 ```
 
@@ -116,16 +116,15 @@ var re = new RegExp('\s*foo\s*', 'i');
 
 ## Error()
 
-```
+```js
 throw new Error('WAT!');
 ```
 
 ### stack
 
-```
+```js
 var err = new Error('WAT!');
 console.log(err.stack);
 ```
 
 [MDN Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
-
