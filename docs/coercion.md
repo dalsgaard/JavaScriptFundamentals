@@ -7,12 +7,17 @@
 ### ToString
 
 ```js
-var a = 42;
-var b = [1, 2, 4];
-var c = {};
-var d = null;
+var a = String(42);
+a; // => "42"
 
-console.log(a, b, c, d);
+var b = String(null);
+b; // => "null"
+
+var c = String([1, 2, 4]);
+c; // => "1,2,4"
+
+var d = String({});
+d; // => "[object Object]"
 ```
 
 [ES5 Spec](https://es5.github.io/#x9.8)
@@ -21,23 +26,29 @@ console.log(a, b, c, d);
 ### ToNumber
 
 ```js
-var b = Number(true);
-b; // => 1
+var a = Number(true);
+a; // => 1
 
-var c = Number(false);
-c; // => 0
+var b = Number(false);
+b; // => 0
 
-var d = Number(undefined);
-d; // => NaN
+var c = Number(undefined);
+c; // => NaN
 
-var e = Number(null);
-e; // => 0
+var d = Number(null);
+d; // => 0
 
-var a = Number('42');
-a; // => 42
+var e = Number('42');
+e; // => 42
 
-var f = Number({});
-f; // => NaN
+var f = Number('');
+f; // => 0
+
+var g = Number('foo');
+g; // => NaN
+
+var h = Number({});
+h; // => NaN
 ```
 
 [ES5 Spec](https://es5.github.io/#x9.3)
@@ -81,6 +92,8 @@ b; // => 'foo'
 var c = Number(a);
 c; // => 42
 ```
+
+### ES5 missing prototype
 
 ```js
 var a = Object.create(null);
