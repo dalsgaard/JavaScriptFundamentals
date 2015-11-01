@@ -1,5 +1,7 @@
 # JavaScript Fundamentals
 
+2-3 November 2015 Aarhus
+
 ## Day 1
 - Programming
 - Intro
