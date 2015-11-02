@@ -2,7 +2,7 @@
 
 ## Day 1
 - Programming
-- Intro
+- Introduction to JavaScript
 - WAT! Video
 - Scope
 - this
@@ -10,7 +10,7 @@
 
 ## Day 2
 - Prototypes
-- TypesAndValues
+- Types and Values
 - Natives
 - Coercion
 - WAT! Video (again)
