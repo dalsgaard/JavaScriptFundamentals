@@ -36,7 +36,7 @@ console.log(a['foo']);
 
 ```js
 a['bar-baz'] = 7;
-console.log(a.foo-bar); // => Throws Error
+console.log(a.bar-baz); // => Throws Error
 ```
 
 #### Property names is always strings
