@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var bar = 9;
+    var foo = {
+      bar: 5,
+      baz: function() {
+        var t = this;
+        setTimeout(function() {
+          console.log(t.bar);
+        }, 10);
+      }
+    };
+    foo.baz();
+    </script>
+  </body>
+</html>

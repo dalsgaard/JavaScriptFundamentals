@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>map</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function map(list, callback) {
+        var res = [];
+        for (var i = 0; i < list.length; i++) {
+          res[i] = callback(list[i]);
+        }
+        return res;
+      }
+      var list = map([1,2,3], function (elem) {
+        return elem * elem;
+      });
+      console.log(list);
+    </script>
+  </body>
+</html>
