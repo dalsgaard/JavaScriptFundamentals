@@ -1,5 +1,7 @@
 # JavaScript Fundamentals
 
+4-5 November 2015 Copenhagen
+
 ## Day 1
 - Programming
 - Introduction to JavaScript
