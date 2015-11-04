@@ -39,12 +39,12 @@ of calling the original function (logical not).
 
 ```js
 function negate(f) {
-  return function () {
+  return function (p) {
 
   };
 }
-var n = negate(function () {
-  return true;
+var n = negate(function (p) {
+  return p & 4; // Only an example
 });
 ```
 
