@@ -186,7 +186,7 @@ A variable is declared to hold values only of a given type.
 
 ```js
 var i = 5;
-i = 1.2; // Will produce an error in a static typed language
+i = 'foo'; // Will produce an error in a static typed language
 ```
 
 ##### Dynamic Typing
@@ -195,7 +195,7 @@ Variables can hold values of different types.
 
 ```js
 var i = 5;
-i = 1.2; // Will not produce an error in a dynamic typed language
+i = 'foo'; // Will not produce an error in a dynamic typed language
 ```
 
 ### Blocks
