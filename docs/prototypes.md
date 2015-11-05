@@ -27,13 +27,13 @@ console.log(foo.a);
 
 ```js
 var Foo = function() {};
-Foo.prototype.bar = 5;
+Foo.prototype.baz = 5;
 
 var Bar = function() {};
 Bar.prototype = new Foo();
 
 var bar = new Bar();
-console.log(bar.a);
+console.log(bar.baz);
 ```
 
 
