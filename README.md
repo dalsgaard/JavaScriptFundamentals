@@ -4,19 +4,19 @@
 
 ## Day 1
 - [Programming](docs/programming.md)
-- Introduction to JavaScript
+- [Introduction to JavaScript](docs/javascript.md)
 - WAT! Video
-- Scope
-- this
-- Object
+- [Scope](docs/scope.md)
+- [this](docs/this.md)
+- [Object](docs/object.md)
 
 ## Day 2
-- Prototypes
-- Types and Values
-- Natives
-- Coercion
+- [Prototypes](docs/prototypes.md)
+- [Types and Values](docs/types-and-values.md)
+- [Natives](docs/natives.md)
+- [Coercion](docs/coercion.md)
 - WAT! Video (again)
-- Grammar
+- [Grammar](docs/grammar.md)
 
 ### Links
 https://github.com/getify/You-Dont-Know-JS
