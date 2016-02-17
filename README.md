@@ -1,9 +1,9 @@
 # JavaScript Fundamentals
 
-4-5 November 2015 Copenhagen
+18-19 February 2016 Aarhus
 
 ## Day 1
-- Programming
+- [Programming](docs/programming.md)
 - Introduction to JavaScript
 - WAT! Video
 - Scope
