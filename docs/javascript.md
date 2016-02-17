@@ -165,9 +165,10 @@ a[4] = 5;
 ```js
 var a = [1, 2, 4];
 a.length; // 3
+a.length = 2;
 ```
 
-The largest numeric key plus one.
+The largest numeric key plus one or an explicitly set value.
 
 ### Function
 

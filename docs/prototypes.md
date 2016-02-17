@@ -11,6 +11,8 @@ console.log(foo instanceof Foo);
 console.log(foo instanceof Object);
 ```
 
+_Constructor functions_ starts per convention with a capital letter.
+
 ## prototype
 
 ### Setting properties on the prototype
@@ -35,7 +37,6 @@ Bar.prototype = new Foo();
 var bar = new Bar();
 console.log(bar.baz);
 ```
-
 
 ### hasOwnProperty
 
