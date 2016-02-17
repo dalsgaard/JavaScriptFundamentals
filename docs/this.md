@@ -46,6 +46,8 @@ hello.call(kim); // Call-Site
 
 ### Default Binding
 
+With _default binding_ `this` equals _global scope_.
+
 ```js
 function foo() {
   console.log(this.a);
