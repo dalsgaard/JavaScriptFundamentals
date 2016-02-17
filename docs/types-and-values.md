@@ -140,6 +140,8 @@ console.log(0 > -0);
 
 ## undefined
 
+In _old_ JavaScript this was _possible_ code.
+
 ```
 undefined = 42; // WAT!
 ```

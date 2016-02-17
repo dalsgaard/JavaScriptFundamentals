@@ -14,7 +14,11 @@
 
 ### String
 
+Strings are primitives in JavaScript!
+
 #### Literals
+
+There is no difference between a string in single- and double quotes.
 
 ```js
 var a = 'single';
@@ -29,6 +33,8 @@ typeof a; // 'string'
 ```
 
 ### number
+
+All numbers are of the same type (no special floats, integers, etc.).
 
 #### Literals
 
@@ -62,6 +68,8 @@ typeof a; // 'boolean'
 
 ### null
 
+_null_ is both a _type_ and a _value_.
+
 #### Literals
 
 ```js
@@ -75,7 +83,11 @@ var a = null;
 typeof a; // 'object' - Bug!
 ```
 
+This is a serious bug in JavaScript that can't be fixed.
+
 ### undefined
+
+_undefined_ (like _null_) is both a _type_ and a _value_.
 
 #### Literals
 
@@ -123,6 +135,8 @@ var c = a['c'];
 
 ### Array
 
+_Arrays_ are objects with special behavior for numerical keys.
+
 #### Literals
 
 ```js
@@ -153,7 +167,11 @@ var a = [1, 2, 4];
 a.length; // 3
 ```
 
+The largest numeric key plus one.
+
 ### Function
+
+_Functions_ are callable objects.
 
 #### Literals
 
@@ -187,19 +205,22 @@ function foo(a, b, c) {
 foo.length; // 3
 ```
 
+The length of the parameter list.
+
 ## Variables
 
 ### Naming
 
-An identifier must start with a-z, A-Z, $, or _.
+An identifier must start with a-z, A-Z, $, or \_.
 It can then contain any of those characters plus the numerals 0-9.
 
 There is a list of reserved words that cannot be used as variable names.
 
+[Reserved keywords as of ECMAScript 6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Reserved_keywords_as_of_ECMAScript_6)
 
 ## Function Scope
 
-JavaScript uses a kind of Lexical Scope called Function Scope
+JavaScript uses a kind of _Lexical Scope_ called _Function Scope_
 where the function is the scope barriers.
 
 ### Hoisting
@@ -240,6 +261,8 @@ switch (i) {
     // stuff
 }
 ```
+
+_switch_ uses strict equality.
 
 ## First-Order Functions
 
