@@ -22,11 +22,15 @@ The statement `a = b + 3;` consists of four expressions
 
 ### Expression Statement
 
+An _expression statement_ is a statement with only one expression.
+
 ```js
 c = 8;
 ```
 
 ### Call Expression
+
+A _call expression_ is an expression calling a _subroutine_.
 
 ```js
 console.log(c);
@@ -34,11 +38,14 @@ console.log(c);
 
 ### Running a Program
 
-- Interpreter
-- Compiler
+There is fundamentally two principles for running a program.
+
+- Interpreting
+- Compiling
 
 The JavaScript engine compiles the program on the fly and then immediately runs the compiled code.
 
+This means that JavaScript is a _compiled language_!
 
 ### Declaring Variables
 
@@ -198,6 +205,8 @@ var i = 5;
 i = 'foo'; // Will not produce an error in a dynamic typed language
 ```
 
+*Dynamic Typing != Typeless*
+
 ### Blocks
 
 ```js
@@ -276,9 +285,36 @@ function foo(a, b) {
 
 ### Scope
 
-#### Lexical Scoping versus Dynamic Scoping
+Scoping can roughly be split into _Lexical Scoping_ and _Dynamic Scoping_.
+
+#### Dynamic Scoping
+
+In _dynamic scoping_ the scope is created dynamically.
+
+##### A fictive language DSJS
+
+```
+function foo () {
+  return i * 2;
+}
+
+function bar () {
+  var i = 3;
+  return foo();
+}
+
+function baz () {
+  var i = 4;
+  return foo();
+}
+
+bar(); // => 6
+baz(); // => 8
+```
 
 #### Lexical Scope
+
+In _lexical scoping_ the scope is fixed at _compile time_.
 
 ```js
 function bar() {
