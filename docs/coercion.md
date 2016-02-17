@@ -146,7 +146,7 @@ var d = '1'
 
 a == b; // => true
 a == c; // => false
-a == d; // => true
+c == d; // => true
 ```
 
 ```js
