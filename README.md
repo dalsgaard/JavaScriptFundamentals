@@ -19,5 +19,5 @@
 - [Grammar](docs/grammar.md)
 
 ### Links
-[You Dont Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
-[Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [You Dont Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
