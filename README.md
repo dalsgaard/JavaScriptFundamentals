@@ -19,4 +19,5 @@
 - [Grammar](docs/grammar.md)
 
 ### Links
-https://github.com/getify/You-Dont-Know-JS
+[You Dont Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+[Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
