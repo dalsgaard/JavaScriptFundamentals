@@ -43,9 +43,14 @@ function negate(f) {
 
   };
 }
-var n = negate(function (p) {
-  return p & 4; // Only an example
-});
+
+function even(a) {
+  return a % 2 === 0;
+}
+
+var odd = negate(even);
+
+odd(3); // => true
 ```
 
 ### once
