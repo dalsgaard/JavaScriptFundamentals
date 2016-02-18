@@ -116,7 +116,7 @@ var a = {
 #### typeof
 
 ```js
-var a;
+var a = { };
 typeof a; // 'object'
 ```
 
@@ -289,7 +289,7 @@ setTimeout(function() {
 }, 1000);
 ```
 
-#### Returning them (functions) as the values from other functions
+### Returning them (functions) as the values from other functions
 
 ```js
 function foo() {
@@ -299,7 +299,7 @@ function foo() {
 }
 ```
 
-#### Assigning them (functions) to variables
+### Assigning them (functions) to variables
 
 ```js
 var foo = function() {
@@ -307,7 +307,7 @@ var foo = function() {
 };
 ```
 
-#### Storing them (functions) in data structures
+### Storing them (functions) in data structures
 
 ```js
 var foo = {
