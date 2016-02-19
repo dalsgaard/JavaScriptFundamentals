@@ -86,3 +86,19 @@ console.log(Foo.constructor === Foo);
 `constructor` is extremely unreliable,
 and it’s an unsafe reference to rely upon in your code.
 Generally, such references should be avoided where possible.
+
+### Methods
+
+```js
+var Person = function (firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+};
+
+Person.prototype.fullName = function () {
+	return this.firstName + ' ' + this.lastName;
+};
+
+var kim = new Person('Kim', 'Dalsgaard');
+console.log(kim.fullName());
+```
