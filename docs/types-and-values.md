@@ -26,7 +26,7 @@ if (typeof foo === 'undefined') {
 
 ```js
 if (!window.foo) {
-	foo = function() {
+	window.foo = function() {
 		// stuff
 	}
 }
