@@ -21,3 +21,4 @@
 ### Links
 - [You Dont Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [ECMAScript 5 Compatibility Table](http://kangax.github.io/compat-table/es5/)
