@@ -7,17 +7,13 @@
 ### ToString
 
 ```js
-var a = String(42);
-a; // => "42"
+String(42); // => "42"
 
-var b = String(null);
-b; // => "null"
+String(null); // => "null"
 
-var c = String([1, 2, 4]);
-c; // => "1,2,4"
+String([1, 2, 4]); // => "1,2,4"
 
-var d = String({});
-d; // => "[object Object]"
+String({}); // => "[object Object]"
 ```
 
 [ES5 Spec](https://es5.github.io/#x9.8)
@@ -26,29 +22,23 @@ d; // => "[object Object]"
 ### ToNumber
 
 ```js
-var a = Number(true);
-a; // => 1
+Number(true); // => 1
 
-var b = Number(false);
-b; // => 0
+Number(false); // => 0
 
-var c = Number(undefined);
-c; // => NaN
+Number(undefined); // => NaN
 
-var d = Number(null);
-d; // => 0
+Number(null); // => 0
 
-var e = Number('42');
-e; // => 42
+Number('42'); // => 42
 
-var f = Number('');
-f; // => 0
+Number(''); // => 0
 
-var g = Number('foo');
-g; // => NaN
+Number('foo'); // => NaN
 
-var h = Number({});
-h; // => NaN
+Number('42foo'); // => NaN
+
+Number({}); // => NaN
 ```
 
 [ES5 Spec](https://es5.github.io/#x9.3)
@@ -86,11 +76,9 @@ var a = {
 	}
 };
 
-var b = String(a);
-b; // => 'foo'
+String(a); // => 'foo'
 
-var c = Number(a);
-c; // => 42
+Number(a); // => 42
 ```
 
 ### ES5 missing prototype
@@ -106,64 +94,42 @@ Number(a);
 ### Explicit Coercion
 
 ```js
-var a = '42';
-var b = 3.14;
-var c = true;
-var d = null;
-var e = 'foo';
+Boolean('42'); // => true
+Boolean(null); // => false
 
-Boolean(a); // => true
-Boolean(d); // => false
+Number('42'); // => 42
+Number(null); // => 0
+Number('foo'); // => NaN
 
-Number(a); // => 42
-Number(d); // => 0
-Number(e); // => NaN
-
-String(b); // => '3.14'
-String(c); // => 'true'
+String(3.14); // => '3.14'
+String(true); // => 'true'
 ```
 
 ### Implicit Coercion
 
 ```js
-var a = '42';
-var b = 3.14;
-var c = true;
-var d = null;
-
-a - 0; // => 42
-b + ''; // => '3.14'
-!!d; // => false
+'42' - 0; // => 42
+3.14 + ''; // => '3.14'
+!!null; // => false
 ```
 
 ### Loose Equals versus Strict Equals
 
 ```js
-var a = 42;
-var b = '42';
-var c = true;
-var d = '1'
-
-a == b; // => true
-a == c; // => false
-c == d; // => true
+42 == '42'; // => true
+42 == true; // => false
+true == '1'; // => true
 ```
 
 ```js
-var a;
-var b = null;
-var c = false;
-var d = 0;
-var e = '';
+undefined == null; // => true
+undefined == false; // => false
+undefined == 0; // => false
+undefined == ''; // => false
 
-a == b; // => true
-a == c; // => false
-a == d; // => false
-a == e; // => false
-
-b == c; // => false
-b == d; // => false
-b == e; // => false
+null == false; // => false
+null == 0; // => false
+null == ''; // => false
 ```
 
 ```js
@@ -172,10 +138,10 @@ var b = new Number(42);
 var c = 42;
 var d = '42';
 
-a == c; // => true
-b == c; // => true
+a == 42; // => true
+b == 42; // => true
 a == b; // => false
-a == d; // => true
+a == '42'; // => true
 ```
 
 [ES5 Spec](https://es5.github.io/#x11.9.3)
@@ -183,12 +149,10 @@ a == d; // => true
 ### Abstract Relational Comparison
 
 ```js
-var a = 42;
-var b = '42';
-var c = '100';
-
-a < c; // => true
-b < c; // => false
+42 < '100'; // => true
+'42' < '100'; // => false
+42 < '100foo'; // => false
+0 < '100foo'; // => false
 ```
 
 ```js
