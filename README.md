@@ -9,14 +9,18 @@
 - [Scope](docs/scope.md)
 - [this](docs/this.md)
 - [Object](docs/object.md)
-
-## Day 2
 - [Prototypes](docs/prototypes.md)
 - [Types and Values](docs/types-and-values.md)
 - [Natives](docs/natives.md)
+
+## Day 2
 - [Coercion](docs/coercion.md)
 - WAT! Video (again)
 - [Grammar](docs/grammar.md)
+- [Array methods (ES5)](docs/array.md)
+- [Prototype Extensions (ES5)](docs/es5-prototype-ext.md)
+- [Properties](docs/properties.md)
+- [Promises](docs/promise.md)
 
 ### Links
 - [You Dont Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
