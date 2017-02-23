@@ -1,6 +1,6 @@
 # JavaScript Fundamentals
 
-18-19 February 2016 Aarhus
+27-28 February 2017 Aarhus
 
 ## Day 1
 - [Programming](docs/programming.md)
