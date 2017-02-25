@@ -16,7 +16,7 @@
 ## Day 2
 - [Coercion](docs/coercion.md)
 - WAT! Video (again)
-- [Grammar](docs/grammar.md)
+- [More Grammar](docs/grammar.md)
 - [Array methods (ES5)](docs/array.md)
 - [Prototype Extensions (ES5)](docs/es5-prototype-ext.md)
 - [Properties](docs/properties.md)

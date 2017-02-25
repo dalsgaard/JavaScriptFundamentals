@@ -51,40 +51,6 @@ console.log(a['true']); // => 2
 console.log(a['42']); // => 4
 ```
 
-#### create
-
-```js
-var foo = {
-  a: 5
-};
-var bar = Object.create(foo);
-console.log(bar.a);
-```
-
-```js
-var foo = {
-  a: 5
-};
-var bar = Object.create(foo, {
-  b : {
-    value: 6
-  }
-});
-console.log(bar.a, bar.b);
-```
-
-#### getPrototypeOf
-
-```js
-var foo = {
-  a: 5
-};
-
-var bar = Object.create(foo);
-
-var proto = Object.getPrototypeOf(bar);
-console.log(proto);
-```
 
 [MDN Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 

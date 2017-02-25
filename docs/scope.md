@@ -102,20 +102,6 @@ var x = 7;
 console.log(window.x); // => 7
 ```
 
-## Hiding
-
-### Principle of Least Privilege
-
-This principle states that in the design of software,
-such as the API for a module/object,
-you should expose only what is minimally necessary, and 'hide' everything else.
-
-### Collision Avoidance
-
-Avoid unintended collision between two different identifiers with the same name
-but different intended usages.
-
-
 ## Function Declaration versus Function Expression
 
 If function is the very first thing in the statement,

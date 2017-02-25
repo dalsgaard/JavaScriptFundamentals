@@ -162,6 +162,8 @@ a[4] = 5;
 
 #### Build-In Properties
 
+##### `length`
+
 ```js
 var a = [1, 2, 4];
 a.length; // 3
@@ -198,6 +200,8 @@ typeof foo; // 'object'
 ```
 
 #### Build-In Properties
+
+##### `length`
 
 ```js
 function foo(a, b, c) {
