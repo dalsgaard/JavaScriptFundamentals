@@ -3,8 +3,8 @@
 ## Producing a Promise
 
 ```js
-let promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
+let promise = new Promise(function (resolve, reject) {
+  setTimeout(function () {
     let ms = Date.now();
     if (ms % 2 === 0) {
       resolve(ms);
@@ -19,10 +19,10 @@ let promise = new Promise((resolve, reject) => {
 
 ```js
 promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
   },
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -32,26 +32,26 @@ promise.then(
 
 ```js
 let q = promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
   },
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
 
-setTimeout(() => {
+setTimeout(function () {
   console.log(q);
 }, 2);
 ```
 
 ```js
 let q = promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
     return value;
   },
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
     return reason;
   }
@@ -62,7 +62,7 @@ let q = promise.then(
 
 ```js
 let q = promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
   }
 );
@@ -73,7 +73,7 @@ let q = promise.then(
 ```js
 let q = promise.then(
   null,
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -83,7 +83,7 @@ let q = promise.then(
 
 ```js
 let q = promise.catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -93,11 +93,11 @@ let q = promise.catch(
 
 ```js
 promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
   }
 ).catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -107,16 +107,16 @@ promise.then(
 
 ```js
 promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
     return value;
   }
 ).then(
-  value => {
+  function (value) {
     console.log(`Value again ${value}`);
   }
 ).catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -126,17 +126,17 @@ promise.then(
 
 ```js
 promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
     return value;
   }
 ).then(
-  value => {
+  function (value) {
     console.log(`Value again ${value}`);
     throw value;
   }
 ).catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -146,8 +146,8 @@ promise.then(
 
 ```js
 function createPromise(d) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
       let ms = Date.now();
       if (ms % d === 0) {
         reject(ms);
@@ -161,16 +161,16 @@ function createPromise(d) {
 let promise = createPromise(5);
 
 let q = promise.then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
     return createPromise(5);
   }
 ).then(
-  value => {
+  function (value) {
     console.log(`Value ${value}`);
   }
 ).catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -184,11 +184,11 @@ let q = promise.then(
 const ps = [createPromise(12), createPromise(8), createPromise(10)];
 
 Promise.all(ps).then(
-  values => {
+  function (values) {
     console.log(`Values ${values}`);
   }
 ).catch(
-  reason => {
+  function (reason) {
     console.log(`Reason ${reason}`);
   }
 );
@@ -196,13 +196,41 @@ Promise.all(ps).then(
 
 #### `race`
 
+```js
+const ps = [createPromise(12), createPromise(8), createPromise(10)];
 
+Promise.race(ps).then(
+  function (value) {
+    console.log(`Value ${value}`);
+  }
+).catch(
+  function (reason) {
+    console.log(`Reason ${reason}`);
+  }
+);
+```
 
 ### `resolve` and `reject`
 
 Non-promise values are *resolved* using `Promise.resolve`
 
+```js
+Promise.resolve(42).then(
+  function (value) {
+    console.log(`Values ${value}`);
+  }
+);
+```
+
 Non-promise values are *rejected* using `Promise.reject`
+
+```js
+Promise.reject(13).catch(
+  function (reason) {
+    console.log(`Reason ${reason}`);
+  }
+);
+```
 
 ## Links
 
