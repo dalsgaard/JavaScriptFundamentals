@@ -91,3 +91,28 @@ var f = memorize(function () {
 console.log(f());
 console.log(f());
 ```
+
+### filter
+
+Takes a list and a callback as parameters, and returns a new list containing
+the elements from the original list where the results of calling the callback was _truthy_.
+
+```js
+function filter(list, callback) {
+
+}
+var list = map([1, 2, 3, 4], function (element) {
+  return element % 2;
+});
+```
+
+### reduce
+
+```js
+function reduce (list, callback) {
+
+}
+var res = reduce([1, 2, 3, 4], function (previous, current, index) {
+  
+});
+```
