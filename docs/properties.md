@@ -246,3 +246,7 @@ var foo = {
 foo.a = 42;
 console.log(foo.a);
 ```
+
+## Links
+
+- [MDN Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
